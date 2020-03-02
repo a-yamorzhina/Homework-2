@@ -5,10 +5,12 @@ body {
 .container {
     width: 1280px;
     margin: 0 auto;
+
     font-family: Arial;
   }
   
   .padding-site {
+
     padding: 50px;
     box-sizing: border-box;
   }
@@ -381,31 +383,44 @@ body {
     color: #445161;
   }
   .footer {
-    padding: 20px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1280px;
+    /* height: 509px; */
+    padding: 50px 0 0 0;
+    background-color: #445161;
   }
   .footer-title {
-    color: #fff;
+    display: block;
+    width: 100%;
+    margin: 0 0 30px 0;
+    font-family: Arial;
+    color:  #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
   }
 
 .form {
-  width: 60%;
-  text-align: right;
-  display: inline-block;
-  padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 500px;
+  margin: 0 46px 0 0;
 }
   .input {
-    width: 500px;
+    width: 100%;
     height: 40px;
-    background-color: #ffffff;
-    border: 1px solid #fff;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    border-radius: 5px;
     margin: 0 0 20px 0;
-    padding: 14px 10px;
-    font-size: 16px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color:  #ffffff;
     outline: none;
+    text-transform: capitalize;
   }
 
   .input::placeholder {
@@ -415,27 +430,46 @@ body {
   }
 
   .txt-area {
+    width: 500px;
+    height: 170px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color:  #ffffff;
+    outline: none;
     resize: vertical;
-    min-height: 170px;
-    font-family: Arial;
     
   }
 
   .send-btn {
+    border-radius: 5px;
+    background-color:  #ffffff;
     width: 140px;
-    margin-left: 64%;
+    height: 40px;
+    text-transform: uppercase;
+    font-family: Arial;
+    color:  #445162;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    outline: none;
   }
   .contacts {
-    width: 30%;
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 64px; 
+    width: 268px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
   }
 
   .contact-item {
     color: #ffffff;
     font-size: 16px;
+    margin-bottom: 20px;
+    margin-left: 30px;
   }
+.contact-item.item-4{
+  margin-bottom: 0;
+}
   .item-1,
   .item-2,
   .item-3,
@@ -507,7 +541,6 @@ body {
   }
 
   .links {
-    margin-left: -30px;
     margin-top: 35px;
   }
 
@@ -548,12 +581,11 @@ body {
 }
 
 .copyright {
-  display: block;
   width: 100%;
   height: 26px;
   background-color: white;
   color: #445162;
-  margin: 0;
+  margin: 75px 0 0 0;
   text-align: center;
   font-size: 14px;
   line-height: 26px;
