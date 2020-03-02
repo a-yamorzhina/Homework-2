@@ -24,7 +24,10 @@
     </header>
     <main>
         <section class="about-the-product padding-site">
-            <img class="about-the-product-img" src="#" alt="about the product img" width="430" height="245">
+            <!--<img class="about-the-product-img" src="#" alt="about the product img" width="430" height="245">-->
+          <video class="video" width="430" height="245" muted autoplay>
+            <source src="https://storage.coverr.co/videos/coverr-forklift-side-view-1570354458095?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjExNDMyN0NEOTRCMUFCMTFERTE3IiwiaWF0IjoxNTgzMTU2ODcwfQ.feugTslRsuIUuNFCDNF94LkKrLSr9GGlsWOub48P7nw">
+          </video>
             <h2 class="title-margin-bottom">About your product</h2>
             <p class="about-the-product-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. 
               Natus eos, eligendi illum rerum omnis porro ex, magni, екфдфдф explicabo veniam incidunt in quam sapiente ut ipsum.</p>
@@ -197,8 +200,10 @@
     <footer class="footer">
         <h2 class="screenshots-title footer-title">Contacts</h2>
           <form class="form" action="#">
-            <input class="input" type="name" placeholder="Your name:">
-            <input class="input" type="email" placeholder="Your email:">
+            <label for="name"></label>
+            <input id="name" class="input" type="name" placeholder="Your name:" autofocus pattern="[A-Za-zА-Яа-яЁё]">
+            <label for="email"></label>
+            <input id="email" class="input" type="email" placeholder="Your email:" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
             <textarea class="input txt-area" name="" id="" cols="30" rows="10" placeholder="Your message:"></textarea>
             <input class="price-item-btn send-btn" type="submit" value="send">
           </form>
