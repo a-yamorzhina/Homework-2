@@ -88,9 +88,13 @@ body {
     clear: both;
   }
 
-  .about-the-product-img {
+  /*.about-the-product-img {
     float: right;
     background-color: #445161;
+  }*/
+
+  .video {
+    float: right;
   }
 
   h2 {
